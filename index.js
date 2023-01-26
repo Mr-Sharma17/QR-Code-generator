@@ -6,8 +6,11 @@ let preValue;
 
 generateBtn.addEventListener("click", () => {
 
-    let qrValue = userInput.value.trim();
-    if (!qrValue || preValue === qrValue) return; //checking if user entered value is empty
+    //extra spaces are also taken into care
+    let qrValue = userInput.value.trim(); 
+    
+    //checking if user entered value is empty
+    if (!qrValue || preValue === qrValue) return; 
 
     preValue = qrValue;
     generateBtn.innerText = "Generating QR Code...";
