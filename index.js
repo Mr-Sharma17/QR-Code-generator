@@ -1,6 +1,6 @@
 const container = document.getElementById("container");
-const userInput = document.querySelector(".form input");
-const generateBtn = document.querySelector(".form button");
+const userInput = document.querySelector(".inputBox input");
+const generateBtn = document.querySelector(".inputBox button");
 const qrImg = document.querySelector(".qr-code img");
 let preValue;
 
